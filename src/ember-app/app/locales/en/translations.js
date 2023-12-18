@@ -21,6 +21,7 @@ import IISItogovaya_tochnoПланЗакупокEForm from './forms/i-i-s-itogov
 import IISItogovaya_tochnoСкладыEForm from './forms/i-i-s-itogovaya-tochno-склады-e';
 import IISItogovaya_tochnoЕдиницыИзмерModel from './models/i-i-s-itogovaya-tochno-единицы-измер';
 import IISItogovaya_tochnoЗаказПостModel from './models/i-i-s-itogovaya-tochno-заказ-пост';
+import IISItogovaya_tochnoИнтерфейсПользователяModel from './models/i-i-s-itogovaya-tochno-интерфейс-пользователя';
 import IISItogovaya_tochnoКонтрагентыModel from './models/i-i-s-itogovaya-tochno-контрагенты';
 import IISItogovaya_tochnoМенеджерModel from './models/i-i-s-itogovaya-tochno-менеджер';
 import IISItogovaya_tochnoНоменклатураModel from './models/i-i-s-itogovaya-tochno-номенклатура';
@@ -30,6 +31,7 @@ import IISItogovaya_tochnoПланЗакупокModel from './models/i-i-s-itogo
 import IISItogovaya_tochnoПланModel from './models/i-i-s-itogovaya-tochno-план';
 import IISItogovaya_tochnoСкладыModel from './models/i-i-s-itogovaya-tochno-склады';
 import IISItogovaya_tochnoТЧЗаказModel from './models/i-i-s-itogovaya-tochno-т-ч-заказ';
+import IISItogovaya_tochnoУправляющийОбъектModel from './models/i-i-s-itogovaya-tochno-управляющий-объект';
 
 const translations = {};
 $.extend(true, translations, EmberFlexberryTranslations);
@@ -38,6 +40,7 @@ $.extend(true, translations, {
   models: {
     'i-i-s-itogovaya-tochno-единицы-измер': IISItogovaya_tochnoЕдиницыИзмерModel,
     'i-i-s-itogovaya-tochno-заказ-пост': IISItogovaya_tochnoЗаказПостModel,
+    'i-i-s-itogovaya-tochno-интерфейс-пользователя': IISItogovaya_tochnoИнтерфейсПользователяModel,
     'i-i-s-itogovaya-tochno-контрагенты': IISItogovaya_tochnoКонтрагентыModel,
     'i-i-s-itogovaya-tochno-менеджер': IISItogovaya_tochnoМенеджерModel,
     'i-i-s-itogovaya-tochno-номенклатура': IISItogovaya_tochnoНоменклатураModel,
@@ -46,7 +49,8 @@ $.extend(true, translations, {
     'i-i-s-itogovaya-tochno-план-закупок': IISItogovaya_tochnoПланЗакупокModel,
     'i-i-s-itogovaya-tochno-план': IISItogovaya_tochnoПланModel,
     'i-i-s-itogovaya-tochno-склады': IISItogovaya_tochnoСкладыModel,
-    'i-i-s-itogovaya-tochno-т-ч-заказ': IISItogovaya_tochnoТЧЗаказModel
+    'i-i-s-itogovaya-tochno-т-ч-заказ': IISItogovaya_tochnoТЧЗаказModel,
+    'i-i-s-itogovaya-tochno-управляющий-объект': IISItogovaya_tochnoУправляющийОбъектModel
   },
 
   'application-name': 'Avtomatizaciya_zakupok_gotovaya',

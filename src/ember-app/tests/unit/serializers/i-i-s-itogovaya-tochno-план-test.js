@@ -14,6 +14,7 @@ moduleForModel('i-i-s-itogovaya-tochno-план', 'Unit | Serializer | i-i-s-ito
 
     'model:i-i-s-itogovaya-tochno-единицы-измер',
     'model:i-i-s-itogovaya-tochno-заказ-пост',
+    'model:i-i-s-itogovaya-tochno-интерфейс-пользователя',
     'model:i-i-s-itogovaya-tochno-контрагенты',
     'model:i-i-s-itogovaya-tochno-менеджер',
     'model:i-i-s-itogovaya-tochno-номенклатура',
@@ -23,6 +24,7 @@ moduleForModel('i-i-s-itogovaya-tochno-план', 'Unit | Serializer | i-i-s-ito
     'model:i-i-s-itogovaya-tochno-план',
     'model:i-i-s-itogovaya-tochno-склады',
     'model:i-i-s-itogovaya-tochno-т-ч-заказ',
+    'model:i-i-s-itogovaya-tochno-управляющий-объект',
     'validator:ds-error',
     'validator:presence',
     'validator:number',

@@ -1,6 +1,6 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('i-i-s-itogovaya-tochno-отчет-о-зак', 'Unit | Model | i-i-s-itogovaya-tochno-отчет-о-зак', {
+moduleForModel('i-i-s-itogovaya-tochno-интерфейс-пользователя', 'Unit | Model | i-i-s-itogovaya-tochno-интерфейс-пользователя', {
   // Specify the other units that are required for this test.
   needs: [
     'model:i-i-s-itogovaya-tochno-единицы-измер',

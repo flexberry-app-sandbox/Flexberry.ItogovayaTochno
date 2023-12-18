@@ -11,6 +11,8 @@
         <class>Itogovaya_tochno.model.TCHZakaz</class>
         <class>Itogovaya_tochno.model.Plan</class>
         <class>Itogovaya_tochno.model.PlanZakupok</class>
+        <class>Itogovaya_tochno.model.UpravlyayushhijOb'ekt</class>
+        <class>Itogovaya_tochno.model.InterfejsPolzovatelya</class>
         <class>Itogovaya_tochno.model.Nomenklatura</class>
         <class>Itogovaya_tochno.model.Sklady</class>
         <class>Itogovaya_tochno.model.Organizacii</class>

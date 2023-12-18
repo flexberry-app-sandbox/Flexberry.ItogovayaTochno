@@ -1,0 +1,15 @@
+﻿{
+  "name": "IISItogovaya_tochnoУправляющийОбъект",
+  "modelName": "i-i-s-itogovaya-tochno-управляющий-объект",
+  "className": "УправляющийОбъект",
+  "nameSpace": "IIS.Itogovaya_tochno",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

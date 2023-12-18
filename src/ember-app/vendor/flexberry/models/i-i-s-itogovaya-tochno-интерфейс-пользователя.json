@@ -1,0 +1,15 @@
+﻿{
+  "name": "IISItogovaya_tochnoИнтерфейсПользователя",
+  "modelName": "i-i-s-itogovaya-tochno-интерфейс-пользователя",
+  "className": "ИнтерфейсПользователя",
+  "nameSpace": "IIS.Itogovaya_tochno",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

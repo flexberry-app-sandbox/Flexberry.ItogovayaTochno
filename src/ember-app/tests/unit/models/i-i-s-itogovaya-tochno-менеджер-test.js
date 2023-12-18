@@ -5,6 +5,7 @@ moduleForModel('i-i-s-itogovaya-tochno-менеджер', 'Unit | Model | i-i-s-
   needs: [
     'model:i-i-s-itogovaya-tochno-единицы-измер',
     'model:i-i-s-itogovaya-tochno-заказ-пост',
+    'model:i-i-s-itogovaya-tochno-интерфейс-пользователя',
     'model:i-i-s-itogovaya-tochno-контрагенты',
     'model:i-i-s-itogovaya-tochno-менеджер',
     'model:i-i-s-itogovaya-tochno-номенклатура',
@@ -14,6 +15,7 @@ moduleForModel('i-i-s-itogovaya-tochno-менеджер', 'Unit | Model | i-i-s-
     'model:i-i-s-itogovaya-tochno-план',
     'model:i-i-s-itogovaya-tochno-склады',
     'model:i-i-s-itogovaya-tochno-т-ч-заказ',
+    'model:i-i-s-itogovaya-tochno-управляющий-объект',
     'validator:ds-error',
     'validator:presence',
     'validator:number',

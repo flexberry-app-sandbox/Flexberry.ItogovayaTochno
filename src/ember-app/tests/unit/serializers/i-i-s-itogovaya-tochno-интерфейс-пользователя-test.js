@@ -1,8 +1,17 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('i-i-s-itogovaya-tochno-отчет-о-зак', 'Unit | Model | i-i-s-itogovaya-tochno-отчет-о-зак', {
+moduleForModel('i-i-s-itogovaya-tochno-интерфейс-пользователя', 'Unit | Serializer | i-i-s-itogovaya-tochno-интерфейс-пользователя', {
   // Specify the other units that are required for this test.
   needs: [
+    'serializer:i-i-s-itogovaya-tochno-интерфейс-пользователя',
+    'service:syncer',
+    'transform:file',
+    'transform:decimal',
+    'transform:guid',
+
+    'transform:i-i-s-itogovaya-tochno-сост-оплаты',
+    'transform:i-i-s-itogovaya-tochno-сост-отгрузки',
+
     'model:i-i-s-itogovaya-tochno-единицы-измер',
     'model:i-i-s-itogovaya-tochno-заказ-пост',
     'model:i-i-s-itogovaya-tochno-интерфейс-пользователя',
@@ -22,13 +31,14 @@ moduleForModel('i-i-s-itogovaya-tochno-отчет-о-зак', 'Unit | Model | i-
     'validator:date',
     'validator:belongs-to',
     'validator:has-many',
-    'service:syncer',
   ],
 });
 
-test('it exists', function(assert) {
-  let model = this.subject();
+// Replace this with your real tests.
+test('it serializes records', function(assert) {
+  let record = this.subject();
 
-  // let store = this.store();
-  assert.ok(!!model);
+  let serializedRecord = record.serialize();
+
+  assert.ok(serializedRecord);
 });

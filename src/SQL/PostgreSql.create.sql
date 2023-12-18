@@ -85,6 +85,16 @@ CREATE TABLE ПланЗакупок (
  PRIMARY KEY (primaryKey));
 
 
+CREATE TABLE УправляющийОбъект (
+ primaryKey UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE ИнтерфейсПользователя (
+ primaryKey UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
 CREATE TABLE Номенклатура (
  primaryKey UUID NOT NULL,
  Номенклатура VARCHAR(255) NULL,
