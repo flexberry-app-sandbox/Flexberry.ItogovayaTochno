@@ -83,6 +83,32 @@
     {{flexberry-validationmessage error=(v-get validationModel.менеджер "фИО" "message")}}
   </div>
   <div class="field">
+    <label>{{t "forms.i-i-s-itogovaya-tochno-заказ-пост-e.организации-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.организации
+      relationName="организации"
+      projection="ОрганизацииL"
+      title=(t "forms.i-i-s-itogovaya-tochno-заказ-пост-e.организации-caption")
+      readonly=readonly
+      componentName="организацииLookup"
+      class=(if (v-get validationModel "организации" "isInvalid") "error")
+      data-test-i-i-s-itogovaya-tochno-заказ-пост-e-организации=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "организации" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.организации.организация
+      class=(if (v-get validationModel.организации "организация" "isInvalid") "error")
+      label=(t "forms.i-i-s-itogovaya-tochno-заказ-пост-e.организации.организация-caption")
+      data-test-i-i-s-itogovaya-tochno-заказ-пост-e-организации-организация=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.организации "организация" "message")}}
+  </div>
+  <div class="field">
     <label>{{t "forms.i-i-s-itogovaya-tochno-заказ-пост-e.склады-caption"}}</label>
     {{flexberry-lookup
       choose="showLookupDialog"

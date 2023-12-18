@@ -78,8 +78,8 @@ export let defineProjections = function (modelClass) {
       фИО: attr('Ответственный', { index: 4 })
     }, { index: 3 }),
     организации: belongsTo('i-i-s-itogovaya-tochno-организации', 'Организация', {
-      организация: attr('Организация', { index: 5, hidden: true })
-    }, { index: 6, hidden: true }),
+      организация: attr('Организация', { index: 6 })
+    }, { index: 5 }),
     склады: belongsTo('i-i-s-itogovaya-tochno-склады', 'Склады', {
       склад: attr('Склад', { index: 8, hidden: true })
     }, { index: 7, displayMemberPath: 'склад' }),

@@ -147,16 +147,16 @@
           "lookupValueField": null,
           "relationName": "Организации",
           "belongsTo": [],
-          "hidden": true,
+          "hidden": false,
           "attrs": [
             {
               "name": "организация",
               "caption": "Организация",
-              "hidden": true,
-              "index": 5
+              "hidden": false,
+              "index": 6
             }
           ],
-          "index": 6,
+          "index": 5,
           "type": "default",
           "caption": "Организация",
           "name": "организации",

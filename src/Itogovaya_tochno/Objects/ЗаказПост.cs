@@ -35,8 +35,8 @@ namespace IIS.Itogovaya_tochno
             "ДатаОкончания as \'Дата окончания\'",
             "Менеджер as \'Ответственный\'",
             "Менеджер.ФИО as \'Ответственный\'",
+            "Организации as \'Организация\'",
             "Организации.Организация as \'Организация\'",
-            "Организации as \'Организации\'",
             "Склады as \'Склады\'",
             "Склады.Склад as \'Склад\'",
             "Контрагенты as \'Контрагенты\'",
@@ -45,12 +45,10 @@ namespace IIS.Itogovaya_tochno
             "СостояниеОплаты as \'Состояние оплаты\'",
             "СуммаВклНДС as \'Сумма вкл НДС\'",
             "СуммаДокумента as \'Сумма документа\'"}, Hidden=new string[] {
-            "Организации.Организация",
             "Склады.Склад",
             "Контрагенты.Контрагент"})]
     [AssociatedDetailViewAttribute("ЗаказПостE", "ТЧЗаказ", "ТЧЗаказE", true, "", "Заказ", true, new string[] {
             ""})]
-    [MasterViewDefineAttribute("ЗаказПостE", "Организации", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Организация")]
     [MasterViewDefineAttribute("ЗаказПостE", "Склады", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Склад")]
     [MasterViewDefineAttribute("ЗаказПостE", "Контрагенты", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Контрагент")]
     [View("ЗаказПостL", new string[] {
