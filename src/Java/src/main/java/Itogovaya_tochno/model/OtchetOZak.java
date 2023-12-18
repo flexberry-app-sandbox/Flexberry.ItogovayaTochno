@@ -45,9 +45,6 @@ public class OtchetOZak {
     @Column(name = "ДатаНачала")
     private Date датаначала;
 
-    @Column(name = "Ответственный")
-    private String ответственный;
-
     @EdmIgnore
     @Converter(converterClass = UUIDConverter.class, name = "Menedzher")
     @Convert("Menedzher")
@@ -158,14 +155,6 @@ public class OtchetOZak {
 
     public void setДатаНачала(Date датаначала) {
       this.датаначала = датаначала;
-    }
-
-    public String getОтветственный() {
-      return ответственный;
-    }
-
-    public void setОтветственный(String ответственный) {
-      this.ответственный = ответственный;
     }
 
 

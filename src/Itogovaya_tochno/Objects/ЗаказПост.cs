@@ -33,7 +33,8 @@ namespace IIS.Itogovaya_tochno
             "Номер as \'Номер\'",
             "ДатаНачала as \'Дата начала\'",
             "ДатаОкончания as \'Дата окончания\'",
-            "Ответственный as \'Ответственный\'",
+            "Менеджер as \'Ответственный\'",
+            "Менеджер.ФИО as \'Ответственный\'",
             "Организации.Организация as \'Организация\'",
             "Организации as \'Организации\'",
             "Склады as \'Склады\'",
@@ -63,7 +64,7 @@ namespace IIS.Itogovaya_tochno
             "Склады.Склад as \'Склад\'",
             "Организации.Организация as \'Организация\'",
             "Контрагенты.Контрагент as \'Контрагент\'",
-            "Ответственный as \'Ответственный\'"})]
+            "Менеджер as \'Ответственный\'"})]
     public class ЗаказПост : IIS.Itogovaya_tochno.ОтчетОЗак
     {
         
@@ -162,38 +163,6 @@ namespace IIS.Itogovaya_tochno
                 // *** Start programmer edit section *** (ЗаказПост.Номер Set end)
 
                 // *** End programmer edit section *** (ЗаказПост.Номер Set end)
-            }
-        }
-        
-        /// <summary>
-        /// Ответственный.
-        /// </summary>
-        // *** Start programmer edit section *** (ЗаказПост.Ответственный CustomAttributes)
-
-        // *** End programmer edit section *** (ЗаказПост.Ответственный CustomAttributes)
-        [StrLen(255)]
-        public override string Ответственный
-        {
-            get
-            {
-                // *** Start programmer edit section *** (ЗаказПост.Ответственный Get start)
-
-                // *** End programmer edit section *** (ЗаказПост.Ответственный Get start)
-                string result = base.Ответственный;
-                // *** Start programmer edit section *** (ЗаказПост.Ответственный Get end)
-
-                // *** End programmer edit section *** (ЗаказПост.Ответственный Get end)
-                return result;
-            }
-            set
-            {
-                // *** Start programmer edit section *** (ЗаказПост.Ответственный Set start)
-
-                // *** End programmer edit section *** (ЗаказПост.Ответственный Set start)
-                base.Ответственный = value;
-                // *** Start programmer edit section *** (ЗаказПост.Ответственный Set end)
-
-                // *** End programmer edit section *** (ЗаказПост.Ответственный Set end)
             }
         }
         

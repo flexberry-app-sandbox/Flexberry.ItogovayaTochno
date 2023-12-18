@@ -33,7 +33,8 @@ namespace IIS.Itogovaya_tochno
             "Номер as \'Номер\'",
             "ДатаНачала as \'Дата начала\'",
             "ДатаОкончания as \'Дата окончания\'",
-            "Ответственный as \'Ответственный\'",
+            "Менеджер as \'Ответственный\'",
+            "Менеджер.ФИО as \'Ответственный\'",
             "Организации as \'Организации\'",
             "Организации.Организация as \'Организация\'",
             "Склады as \'Склады\'",
@@ -63,7 +64,7 @@ namespace IIS.Itogovaya_tochno
             "Склады.Склад as \'Склад\'",
             "Организации.Организация as \'Организация\'",
             "Контрагенты.Контрагент as \'Контрагент\'",
-            "Ответственный as \'Ответственный\'"})]
+            "Менеджер as \'Ответственный\'"})]
     public class ОтчетОЗак : ICSSoft.STORMNET.DataObject
     {
         
@@ -80,8 +81,6 @@ namespace IIS.Itogovaya_tochno
         private int fСуммаДокумента;
         
         private System.DateTime fДатаНачала = System.DateTime.Now;
-        
-        private string fОтветственный;
         
         private IIS.Itogovaya_tochno.Менеджер fМенеджер;
         
@@ -188,38 +187,6 @@ namespace IIS.Itogovaya_tochno
                 // *** Start programmer edit section *** (ОтчетОЗак.Номер Set end)
 
                 // *** End programmer edit section *** (ОтчетОЗак.Номер Set end)
-            }
-        }
-        
-        /// <summary>
-        /// Ответственный.
-        /// </summary>
-        // *** Start programmer edit section *** (ОтчетОЗак.Ответственный CustomAttributes)
-
-        // *** End programmer edit section *** (ОтчетОЗак.Ответственный CustomAttributes)
-        [StrLen(255)]
-        public virtual string Ответственный
-        {
-            get
-            {
-                // *** Start programmer edit section *** (ОтчетОЗак.Ответственный Get start)
-
-                // *** End programmer edit section *** (ОтчетОЗак.Ответственный Get start)
-                string result = this.fОтветственный;
-                // *** Start programmer edit section *** (ОтчетОЗак.Ответственный Get end)
-
-                // *** End programmer edit section *** (ОтчетОЗак.Ответственный Get end)
-                return result;
-            }
-            set
-            {
-                // *** Start programmer edit section *** (ОтчетОЗак.Ответственный Set start)
-
-                // *** End programmer edit section *** (ОтчетОЗак.Ответственный Set start)
-                this.fОтветственный = value;
-                // *** Start programmer edit section *** (ОтчетОЗак.Ответственный Set end)
-
-                // *** End programmer edit section *** (ОтчетОЗак.Ответственный Set end)
             }
         }
         

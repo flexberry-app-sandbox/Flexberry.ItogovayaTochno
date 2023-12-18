@@ -32,28 +32,24 @@ namespace IIS.Itogovaya_tochno
     [View("ПланЗакупокE", new string[] {
             "Номер as \'Номер\'",
             "ДатаНачала as \'Дата\'",
-            "Ответственный as \'Ответственный\'",
-            "Организации as \'Организации\'",
+            "Менеджер as \'Ответственный\'",
+            "Менеджер.ФИО as \'Ответственный\'",
+            "Организации as \'Организация\'",
             "Организации.Организация as \'Организация\'",
-            "Склады as \'Склады\'",
-            "Склады.Склад as \'Склад\'",
-            "Контрагенты as \'Контрагенты\'",
-            "Контрагенты.Контрагент as \'Контрагент\'"}, Hidden=new string[] {
+            "Склады as \'Склад\'",
+            "Склады.Склад as \'Склад\'"}, Hidden=new string[] {
             "Организации.Организация",
-            "Склады.Склад",
-            "Контрагенты.Контрагент"})]
+            "Склады.Склад"})]
     [AssociatedDetailViewAttribute("ПланЗакупокE", "План", "ПланE", true, "", "План", true, new string[] {
             ""})]
     [MasterViewDefineAttribute("ПланЗакупокE", "Организации", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Организация")]
     [MasterViewDefineAttribute("ПланЗакупокE", "Склады", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Склад")]
-    [MasterViewDefineAttribute("ПланЗакупокE", "Контрагенты", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Контрагент")]
     [View("ПланЗакупокL", new string[] {
             "Номер as \'Номер\'",
             "ДатаНачала as \'Дата начала\'",
             "Организации.Организация as \'Организация\'",
-            "Контрагенты.Контрагент as \'Контрагент\'",
             "Склады.Склад as \'Склад\'",
-            "Ответственный as \'Ответственный\'"})]
+            "Менеджер as \'Ответственный\'"})]
     public class ПланЗакупок : ICSSoft.STORMNET.DataObject
     {
         
@@ -61,13 +57,9 @@ namespace IIS.Itogovaya_tochno
         
         private System.DateTime fДатаНачала = System.DateTime.Now;
         
-        private string fОтветственный;
-        
         private IIS.Itogovaya_tochno.Организации fОрганизации;
         
         private IIS.Itogovaya_tochno.Менеджер fМенеджер;
-        
-        private IIS.Itogovaya_tochno.Контрагенты fКонтрагенты;
         
         private IIS.Itogovaya_tochno.Склады fСклады;
         
@@ -137,72 +129,6 @@ namespace IIS.Itogovaya_tochno
                 // *** Start programmer edit section *** (ПланЗакупок.Номер Set end)
 
                 // *** End programmer edit section *** (ПланЗакупок.Номер Set end)
-            }
-        }
-        
-        /// <summary>
-        /// Ответственный.
-        /// </summary>
-        // *** Start programmer edit section *** (ПланЗакупок.Ответственный CustomAttributes)
-
-        // *** End programmer edit section *** (ПланЗакупок.Ответственный CustomAttributes)
-        [StrLen(255)]
-        public virtual string Ответственный
-        {
-            get
-            {
-                // *** Start programmer edit section *** (ПланЗакупок.Ответственный Get start)
-
-                // *** End programmer edit section *** (ПланЗакупок.Ответственный Get start)
-                string result = this.fОтветственный;
-                // *** Start programmer edit section *** (ПланЗакупок.Ответственный Get end)
-
-                // *** End programmer edit section *** (ПланЗакупок.Ответственный Get end)
-                return result;
-            }
-            set
-            {
-                // *** Start programmer edit section *** (ПланЗакупок.Ответственный Set start)
-
-                // *** End programmer edit section *** (ПланЗакупок.Ответственный Set start)
-                this.fОтветственный = value;
-                // *** Start programmer edit section *** (ПланЗакупок.Ответственный Set end)
-
-                // *** End programmer edit section *** (ПланЗакупок.Ответственный Set end)
-            }
-        }
-        
-        /// <summary>
-        /// План закупок.
-        /// </summary>
-        // *** Start programmer edit section *** (ПланЗакупок.Контрагенты CustomAttributes)
-
-        // *** End programmer edit section *** (ПланЗакупок.Контрагенты CustomAttributes)
-        [PropertyStorage(new string[] {
-                "Контрагенты"})]
-        [NotNull()]
-        public virtual IIS.Itogovaya_tochno.Контрагенты Контрагенты
-        {
-            get
-            {
-                // *** Start programmer edit section *** (ПланЗакупок.Контрагенты Get start)
-
-                // *** End programmer edit section *** (ПланЗакупок.Контрагенты Get start)
-                IIS.Itogovaya_tochno.Контрагенты result = this.fКонтрагенты;
-                // *** Start programmer edit section *** (ПланЗакупок.Контрагенты Get end)
-
-                // *** End programmer edit section *** (ПланЗакупок.Контрагенты Get end)
-                return result;
-            }
-            set
-            {
-                // *** Start programmer edit section *** (ПланЗакупок.Контрагенты Set start)
-
-                // *** End programmer edit section *** (ПланЗакупок.Контрагенты Set start)
-                this.fКонтрагенты = value;
-                // *** Start programmer edit section *** (ПланЗакупок.Контрагенты Set end)
-
-                // *** End programmer edit section *** (ПланЗакупок.Контрагенты Set end)
             }
         }
         

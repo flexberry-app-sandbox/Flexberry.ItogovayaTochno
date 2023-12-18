@@ -23,25 +23,9 @@
       "defaultValue": "",
       "stored": true,
       "ordered": false
-    },
-    {
-      "name": "ответственный",
-      "type": "string",
-      "flexberryType": "string",
-      "notNull": false,
-      "defaultValue": "",
-      "stored": true,
-      "ordered": false
     }
   ],
   "belongsTo": [
-    {
-      "polymorphic": false,
-      "presence": true,
-      "name": "контрагенты",
-      "relatedTo": "i-i-s-itogovaya-tochno-контрагенты",
-      "inverse": null
-    },
     {
       "polymorphic": false,
       "presence": true,
@@ -87,15 +71,30 @@
           "caption": "Дата",
           "hidden": false,
           "index": 1
-        },
-        {
-          "name": "ответственный",
-          "caption": "Ответственный",
-          "hidden": false,
-          "index": 2
         }
       ],
       "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Менеджер",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "Ответственный",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "default",
+          "caption": "Ответственный",
+          "name": "менеджер",
+          "relatedTo": "i-i-s-itogovaya-tochno-менеджер",
+          "inverse": null
+        },
         {
           "lookupValue": "Организация",
           "lookupValueField": "организация",
@@ -107,12 +106,12 @@
               "name": "организация",
               "caption": "Организация",
               "hidden": true,
-              "index": 4
+              "index": 5
             }
           ],
-          "index": 3,
+          "index": 4,
           "type": "standard",
-          "caption": "Организации",
+          "caption": "Организация",
           "name": "организации",
           "relatedTo": "i-i-s-itogovaya-tochno-организации",
           "inverse": null
@@ -128,35 +127,14 @@
               "name": "склад",
               "caption": "Склад",
               "hidden": true,
-              "index": 6
+              "index": 7
             }
           ],
-          "index": 5,
+          "index": 6,
           "type": "standard",
-          "caption": "Склады",
+          "caption": "Склад",
           "name": "склады",
           "relatedTo": "i-i-s-itogovaya-tochno-склады",
-          "inverse": null
-        },
-        {
-          "lookupValue": "Контрагент",
-          "lookupValueField": "контрагент",
-          "relationName": "Контрагенты",
-          "belongsTo": [],
-          "hidden": false,
-          "attrs": [
-            {
-              "name": "контрагент",
-              "caption": "Контрагент",
-              "hidden": true,
-              "index": 8
-            }
-          ],
-          "index": 7,
-          "type": "standard",
-          "caption": "Контрагенты",
-          "name": "контрагенты",
-          "relatedTo": "i-i-s-itogovaya-tochno-контрагенты",
           "inverse": null
         }
       ],
@@ -185,12 +163,6 @@
           "caption": "Дата начала",
           "hidden": false,
           "index": 1
-        },
-        {
-          "name": "ответственный",
-          "caption": "Ответственный",
-          "hidden": false,
-          "index": 5
         }
       ],
       "belongsTo": [
@@ -218,27 +190,6 @@
         {
           "lookupValue": null,
           "lookupValueField": null,
-          "relationName": "Контрагенты",
-          "belongsTo": [],
-          "hidden": false,
-          "attrs": [
-            {
-              "name": "контрагент",
-              "caption": "Контрагент",
-              "hidden": false,
-              "index": 3
-            }
-          ],
-          "index": -1,
-          "type": "default",
-          "caption": "Контрагент",
-          "name": "контрагенты",
-          "relatedTo": "i-i-s-itogovaya-tochno-контрагенты",
-          "inverse": null
-        },
-        {
-          "lookupValue": null,
-          "lookupValueField": null,
           "relationName": "Склады",
           "belongsTo": [],
           "hidden": false,
@@ -247,7 +198,7 @@
               "name": "склад",
               "caption": "Склад",
               "hidden": false,
-              "index": 4
+              "index": 3
             }
           ],
           "index": -1,
@@ -255,6 +206,20 @@
           "caption": "Склад",
           "name": "склады",
           "relatedTo": "i-i-s-itogovaya-tochno-склады",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Менеджер",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 4,
+          "type": "default",
+          "caption": "Ответственный",
+          "name": "менеджер",
+          "relatedTo": "i-i-s-itogovaya-tochno-менеджер",
           "inverse": null
         }
       ],

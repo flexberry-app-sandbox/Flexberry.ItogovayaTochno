@@ -8,7 +8,6 @@ export let Model = Mixin.create({
   датаНачала: DS.attr('date', { defaultValue() { return new Date(); } }),
   датаОкончания: DS.attr('date'),
   номер: DS.attr('number'),
-  ответственный: DS.attr('string'),
   состОтгрузки: DS.attr('i-i-s-itogovaya-tochno-сост-отгрузки'),
   состояниеОплаты: DS.attr('i-i-s-itogovaya-tochno-сост-оплаты'),
   суммаВклНДС: DS.attr('boolean'),
@@ -40,12 +39,6 @@ export let ValidationRules = {
     validators: [
       validator('ds-error'),
       validator('number', { allowString: true, allowBlank: true, integer: true }),
-    ],
-  },
-  ответственный: {
-    descriptionKey: 'models.i-i-s-itogovaya-tochno-отчет-о-зак.validations.ответственный.__caption__',
-    validators: [
-      validator('ds-error'),
     ],
   },
   состОтгрузки: {
@@ -115,20 +108,22 @@ export let defineProjections = function (modelClass) {
     номер: attr('Номер', { index: 0 }),
     датаНачала: attr('Дата начала', { index: 1 }),
     датаОкончания: attr('Дата окончания', { index: 2 }),
-    ответственный: attr('Ответственный', { index: 3 }),
+    менеджер: belongsTo('i-i-s-itogovaya-tochno-менеджер', 'Ответственный', {
+      фИО: attr('Ответственный', { index: 4 })
+    }, { index: 3 }),
     организации: belongsTo('i-i-s-itogovaya-tochno-организации', 'Организации', {
-      организация: attr('Организация', { index: 5, hidden: true })
-    }, { index: 4, displayMemberPath: 'организация' }),
+      организация: attr('Организация', { index: 6, hidden: true })
+    }, { index: 5, displayMemberPath: 'организация' }),
     склады: belongsTo('i-i-s-itogovaya-tochno-склады', 'Склады', {
-      склад: attr('Склад', { index: 7, hidden: true })
-    }, { index: 6, displayMemberPath: 'склад' }),
+      склад: attr('Склад', { index: 8, hidden: true })
+    }, { index: 7, displayMemberPath: 'склад' }),
     контрагенты: belongsTo('i-i-s-itogovaya-tochno-контрагенты', 'Контрагенты', {
-      контрагент: attr('Контрагент', { index: 9, hidden: true })
-    }, { index: 8, displayMemberPath: 'контрагент' }),
-    состояниеОплаты: attr('Состояние оплаты', { index: 10 }),
-    состОтгрузки: attr('Сост отгрузки', { index: 11 }),
-    суммаВклНДС: attr('Сумма вкл НДС', { index: 12 }),
-    суммаДокумента: attr('Сумма документа', { index: 13 }),
+      контрагент: attr('Контрагент', { index: 10, hidden: true })
+    }, { index: 9, displayMemberPath: 'контрагент' }),
+    состояниеОплаты: attr('Состояние оплаты', { index: 11 }),
+    состОтгрузки: attr('Сост отгрузки', { index: 12 }),
+    суммаВклНДС: attr('Сумма вкл НДС', { index: 13 }),
+    суммаДокумента: attr('Сумма документа', { index: 14 }),
     тЧЗаказ: hasMany('i-i-s-itogovaya-tochno-т-ч-заказ', 'Заказ', {
       номенклатура: belongsTo('i-i-s-itogovaya-tochno-номенклатура', 'Номенклатура', {
         номенклатура: attr('Номенклатура', { index: 1, hidden: true }),
@@ -164,6 +159,8 @@ export let defineProjections = function (modelClass) {
     контрагенты: belongsTo('i-i-s-itogovaya-tochno-контрагенты', 'Контрагент', {
       контрагент: attr('Контрагент', { index: 9 })
     }, { index: -1, hidden: true }),
-    ответственный: attr('Ответственный', { index: 10 })
+    менеджер: belongsTo('i-i-s-itogovaya-tochno-менеджер', 'Ответственный', {
+
+    }, { index: 10 })
   });
 };

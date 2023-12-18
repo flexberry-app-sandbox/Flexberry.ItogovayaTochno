@@ -45,9 +45,6 @@ public class ZakazPost {
     @Column(name = "ДатаОкончания")
     private Date датаокончания;
 
-    @Column(name = "Ответственный")
-    private String ответственный;
-
     @EdmIgnore
     @Converter(converterClass = UUIDConverter.class, name = "Menedzher")
     @Convert("Menedzher")
@@ -158,14 +155,6 @@ public class ZakazPost {
 
     public void setДатаОкончания(Date датаокончания) {
       this.датаокончания = датаокончания;
-    }
-
-    public String getОтветственный() {
-      return ответственный;
-    }
-
-    public void setОтветственный(String ответственный) {
-      this.ответственный = ответственный;
     }
 
 

@@ -57,14 +57,30 @@
     {{flexberry-validationmessage error=(v-get validationModel "датаОкончания" "message")}}
   </div>
   <div class="field">
-    {{flexberry-field
+    <label>{{t "forms.i-i-s-itogovaya-tochno-отчет-о-зак-e.менеджер-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.менеджер
+      relationName="менеджер"
+      projection="МенеджерL"
+      title=(t "forms.i-i-s-itogovaya-tochno-отчет-о-зак-e.менеджер-caption")
       readonly=readonly
-      value=model.ответственный
-      class=(if (v-get validationModel "ответственный" "isInvalid") "error")
-      label=(t "forms.i-i-s-itogovaya-tochno-отчет-о-зак-e.ответственный-caption")
-      data-test-i-i-s-itogovaya-tochno-отчет-о-зак-e-ответственный=true
+      componentName="менеджерLookup"
+      class=(if (v-get validationModel "менеджер" "isInvalid") "error")
+      data-test-i-i-s-itogovaya-tochno-отчет-о-зак-e-менеджер=true
     }}
-    {{flexberry-validationmessage error=(v-get validationModel "ответственный" "message")}}
+    {{flexberry-validationmessage error=(v-get validationModel "менеджер" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.менеджер.фИО
+      class=(if (v-get validationModel.менеджер "фИО" "isInvalid") "error")
+      label=(t "forms.i-i-s-itogovaya-tochno-отчет-о-зак-e.менеджер.фИО-caption")
+      data-test-i-i-s-itogovaya-tochno-отчет-о-зак-e-менеджер-фИО=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.менеджер "фИО" "message")}}
   </div>
   <div class="field">
     <label>{{t "forms.i-i-s-itogovaya-tochno-отчет-о-зак-e.организации-caption"}}</label>

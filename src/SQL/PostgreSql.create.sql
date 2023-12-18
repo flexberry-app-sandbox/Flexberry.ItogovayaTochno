@@ -8,7 +8,6 @@ CREATE TABLE ОтчетОЗак (
  ДатаНачала TIMESTAMP(3) NULL,
  ДатаОкончания TIMESTAMP(3) NULL,
  Номер INT NULL,
- Ответственный VARCHAR(255) NULL,
  СостОтгрузки VARCHAR(18) NULL,
  СостояниеОплаты VARCHAR(17) NULL,
  СуммаВклНДС BOOLEAN NULL,
@@ -37,7 +36,6 @@ CREATE TABLE ЗаказПост (
  ДатаНачала TIMESTAMP(3) NULL,
  ДатаОкончания TIMESTAMP(3) NULL,
  Номер INT NULL,
- Ответственный VARCHAR(255) NULL,
  СостОтгрузки VARCHAR(18) NULL,
  СостояниеОплаты VARCHAR(17) NULL,
  СуммаВклНДС BOOLEAN NULL,
@@ -81,8 +79,6 @@ CREATE TABLE ПланЗакупок (
  primaryKey UUID NOT NULL,
  ДатаНачала TIMESTAMP(3) NULL,
  Номер INT NULL,
- Ответственный VARCHAR(255) NULL,
- Контрагенты UUID NOT NULL,
  Менеджер UUID NOT NULL,
  Организации UUID NOT NULL,
  Склады UUID NOT NULL,
@@ -251,9 +247,6 @@ CREATE INDEX Index49e4a3e08c106dbd71bc0946a7ce6f507a7f14ef on План (Номе
 
  ALTER TABLE План ADD CONSTRAINT FK97bb4bfafc2155cc1910684c316067048ee92263 FOREIGN KEY (ПланЗакупок) REFERENCES ПланЗакупок; 
 CREATE INDEX Index97bb4bfafc2155cc1910684c316067048ee92263 on План (ПланЗакупок); 
-
- ALTER TABLE ПланЗакупок ADD CONSTRAINT FKa24a80f84eb2458998932bb392a2b08862e298f1 FOREIGN KEY (Контрагенты) REFERENCES Контрагенты; 
-CREATE INDEX Indexa24a80f84eb2458998932bb392a2b08862e298f1 on ПланЗакупок (Контрагенты); 
 
  ALTER TABLE ПланЗакупок ADD CONSTRAINT FK6160f32ebf4a15feea7252698b891e715bcc479e FOREIGN KEY (Менеджер) REFERENCES Менеджер; 
 CREATE INDEX Index6160f32ebf4a15feea7252698b891e715bcc479e on ПланЗакупок (Менеджер); 

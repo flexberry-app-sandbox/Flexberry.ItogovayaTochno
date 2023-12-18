@@ -34,15 +34,6 @@
       "ordered": false
     },
     {
-      "name": "ответственный",
-      "type": "string",
-      "flexberryType": "string",
-      "notNull": false,
-      "defaultValue": "",
-      "stored": true,
-      "ordered": false
-    },
-    {
       "name": "состОтгрузки",
       "type": "i-i-s-itogovaya-tochno-сост-отгрузки",
       "flexberryType": "СостОтгрузки",
@@ -105,37 +96,52 @@
           "index": 2
         },
         {
-          "name": "ответственный",
-          "caption": "Ответственный",
-          "hidden": false,
-          "index": 3
-        },
-        {
           "name": "состОтгрузки",
           "caption": "Сост отгрузки",
           "hidden": false,
-          "index": 10
+          "index": 11
         },
         {
           "name": "состояниеОплаты",
           "caption": "Состояние оплаты",
           "hidden": false,
-          "index": 11
+          "index": 12
         },
         {
           "name": "суммаВклНДС",
           "caption": "Сумма вкл НДС",
           "hidden": false,
-          "index": 12
+          "index": 13
         },
         {
           "name": "суммаДокумента",
           "caption": "Сумма документа",
           "hidden": false,
-          "index": 13
+          "index": 14
         }
       ],
       "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Менеджер",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "Ответственный",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "default",
+          "caption": "Ответственный",
+          "name": "менеджер",
+          "relatedTo": "i-i-s-itogovaya-tochno-менеджер",
+          "inverse": null
+        },
         {
           "lookupValue": null,
           "lookupValueField": null,
@@ -147,10 +153,10 @@
               "name": "организация",
               "caption": "Организация",
               "hidden": true,
-              "index": 4
+              "index": 5
             }
           ],
-          "index": 5,
+          "index": 6,
           "type": "default",
           "caption": "Организация",
           "name": "организации",
@@ -168,10 +174,10 @@
               "name": "склад",
               "caption": "Склад",
               "hidden": true,
-              "index": 7
+              "index": 8
             }
           ],
-          "index": 6,
+          "index": 7,
           "type": "standard",
           "caption": "Склады",
           "name": "склады",
@@ -189,10 +195,10 @@
               "name": "контрагент",
               "caption": "Контрагент",
               "hidden": true,
-              "index": 9
+              "index": 10
             }
           ],
-          "index": 8,
+          "index": 9,
           "type": "standard",
           "caption": "Контрагенты",
           "name": "контрагенты",
@@ -255,12 +261,6 @@
           "caption": "Дата окончания",
           "hidden": false,
           "index": 6
-        },
-        {
-          "name": "ответственный",
-          "caption": "Ответственный",
-          "hidden": false,
-          "index": 10
         }
       ],
       "belongsTo": [
@@ -325,6 +325,20 @@
           "caption": "Контрагент",
           "name": "контрагенты",
           "relatedTo": "i-i-s-itogovaya-tochno-контрагенты",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Менеджер",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 10,
+          "type": "default",
+          "caption": "Ответственный",
+          "name": "менеджер",
+          "relatedTo": "i-i-s-itogovaya-tochno-менеджер",
           "inverse": null
         }
       ],

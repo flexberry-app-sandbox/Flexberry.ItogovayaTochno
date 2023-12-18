@@ -46,14 +46,30 @@
     {{flexberry-validationmessage error=(v-get validationModel "датаНачала" "message")}}
   </div>
   <div class="field">
-    {{flexberry-field
+    <label>{{t "forms.i-i-s-itogovaya-tochno-план-закупок-e.менеджер-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.менеджер
+      relationName="менеджер"
+      projection="МенеджерL"
+      title=(t "forms.i-i-s-itogovaya-tochno-план-закупок-e.менеджер-caption")
       readonly=readonly
-      value=model.ответственный
-      class=(if (v-get validationModel "ответственный" "isInvalid") "error")
-      label=(t "forms.i-i-s-itogovaya-tochno-план-закупок-e.ответственный-caption")
-      data-test-i-i-s-itogovaya-tochno-план-закупок-e-ответственный=true
+      componentName="менеджерLookup"
+      class=(if (v-get validationModel "менеджер" "isInvalid") "error")
+      data-test-i-i-s-itogovaya-tochno-план-закупок-e-менеджер=true
     }}
-    {{flexberry-validationmessage error=(v-get validationModel "ответственный" "message")}}
+    {{flexberry-validationmessage error=(v-get validationModel "менеджер" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.менеджер.фИО
+      class=(if (v-get validationModel.менеджер "фИО" "isInvalid") "error")
+      label=(t "forms.i-i-s-itogovaya-tochno-план-закупок-e.менеджер.фИО-caption")
+      data-test-i-i-s-itogovaya-tochno-план-закупок-e-менеджер-фИО=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.менеджер "фИО" "message")}}
   </div>
   <div class="field">
     <label>{{t "forms.i-i-s-itogovaya-tochno-план-закупок-e.организации-caption"}}</label>
@@ -90,24 +106,6 @@
       data-test-i-i-s-itogovaya-tochno-план-закупок-e-склады=true
     }}
     {{flexberry-validationmessage error=(v-get validationModel "склады" "message")}}
-  </div>
-  <div class="field">
-    <label>{{t "forms.i-i-s-itogovaya-tochno-план-закупок-e.контрагенты-caption"}}</label>
-    {{flexberry-lookup
-      choose="showLookupDialog"
-      remove="removeLookupValue"
-      value=model.контрагенты
-      displayAttributeName="контрагент"
-      autocomplete=true
-      relationName="контрагенты"
-      projection="КонтрагентыL"
-      title=(t "forms.i-i-s-itogovaya-tochno-план-закупок-e.контрагенты-caption")
-      readonly=readonly
-      componentName="контрагентыLookup"
-      class=(if (v-get validationModel "контрагенты" "isInvalid") "error")
-      data-test-i-i-s-itogovaya-tochno-план-закупок-e-контрагенты=true
-    }}
-    {{flexberry-validationmessage error=(v-get validationModel "контрагенты" "message")}}
   </div>
   <div class="field">
     <label>{{t "forms.i-i-s-itogovaya-tochno-план-закупок-e.план-caption"}}</label>

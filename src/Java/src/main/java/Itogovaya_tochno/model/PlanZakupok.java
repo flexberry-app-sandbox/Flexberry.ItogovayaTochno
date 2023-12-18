@@ -30,9 +30,6 @@ public class PlanZakupok {
     @Column(name = "ДатаНачала")
     private Date датаначала;
 
-    @Column(name = "Ответственный")
-    private String ответственный;
-
     @EdmIgnore
     @Converter(converterClass = UUIDConverter.class, name = "Organizacii")
     @Convert("Organizacii")
@@ -52,16 +49,6 @@ public class PlanZakupok {
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
     @JoinColumn(name = "Menedzher", insertable = false, updatable = false)
     private Menedzher menedzher;
-
-    @EdmIgnore
-    @Converter(converterClass = UUIDConverter.class, name = "Kontragenty")
-    @Convert("Kontragenty")
-    @Column(name = "Контрагенты", length = 16, unique = true, nullable = false)
-    private UUID _kontragentyid;
-
-    @ManyToOne(optional = false, fetch = FetchType.LAZY)
-    @JoinColumn(name = "Kontragenty", insertable = false, updatable = false)
-    private Kontragenty kontragenty;
 
     @EdmIgnore
     @Converter(converterClass = UUIDConverter.class, name = "Sklady")
@@ -103,14 +90,6 @@ public class PlanZakupok {
 
     public void setДатаНачала(Date датаначала) {
       this.датаначала = датаначала;
-    }
-
-    public String getОтветственный() {
-      return ответственный;
-    }
-
-    public void setОтветственный(String ответственный) {
-      this.ответственный = ответственный;
     }
 
 
