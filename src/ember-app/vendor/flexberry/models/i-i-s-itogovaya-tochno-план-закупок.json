@@ -214,8 +214,15 @@
           "relationName": "Менеджер",
           "belongsTo": [],
           "hidden": false,
-          "attrs": [],
-          "index": 4,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "Ответственный",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
           "type": "default",
           "caption": "Ответственный",
           "name": "менеджер",

@@ -96,7 +96,7 @@ export let defineProjections = function (modelClass) {
       склад: attr('Склад', { index: 3 })
     }, { index: -1, hidden: true }),
     менеджер: belongsTo('i-i-s-itogovaya-tochno-менеджер', 'Ответственный', {
-
-    }, { index: 4 })
+      фИО: attr('Ответственный', { index: 4 })
+    }, { index: -1, hidden: true })
   });
 };
