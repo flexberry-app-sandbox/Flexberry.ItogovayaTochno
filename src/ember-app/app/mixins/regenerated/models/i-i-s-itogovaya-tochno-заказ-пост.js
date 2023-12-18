@@ -123,7 +123,7 @@ export let defineProjections = function (modelClass) {
       контрагент: attr('Контрагент', { index: 9 })
     }, { index: -1, hidden: true }),
     менеджер: belongsTo('i-i-s-itogovaya-tochno-менеджер', 'Ответственный', {
-
-    }, { index: 10 })
+      фИО: attr('Ответственный', { index: 10 })
+    }, { index: -1, hidden: true })
   });
 };

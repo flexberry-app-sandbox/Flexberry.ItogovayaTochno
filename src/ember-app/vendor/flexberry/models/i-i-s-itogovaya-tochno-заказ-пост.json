@@ -333,8 +333,15 @@
           "relationName": "Менеджер",
           "belongsTo": [],
           "hidden": false,
-          "attrs": [],
-          "index": 10,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "Ответственный",
+              "hidden": false,
+              "index": 10
+            }
+          ],
+          "index": -1,
           "type": "default",
           "caption": "Ответственный",
           "name": "менеджер",

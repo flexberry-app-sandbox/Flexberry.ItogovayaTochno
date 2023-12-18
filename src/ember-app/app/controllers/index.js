@@ -26,37 +26,37 @@ export default Controller.extend({
               link: 'i-i-s-itogovaya-tochno-номенклатура-l',
               caption: i18n.t('forms.application.sitemap.автоматизация-закупок.справочник.i-i-s-itogovaya-tochno-номенклатура-l.caption'),
               title: i18n.t('forms.application.sitemap.автоматизация-закупок.справочник.i-i-s-itogovaya-tochno-номенклатура-l.title'),
-              icon: 'paperclip',
+              icon: 'archive',
               children: null
             }, {
               link: 'i-i-s-itogovaya-tochno-организации-l',
               caption: i18n.t('forms.application.sitemap.автоматизация-закупок.справочник.i-i-s-itogovaya-tochno-организации-l.caption'),
               title: i18n.t('forms.application.sitemap.автоматизация-закупок.справочник.i-i-s-itogovaya-tochno-организации-l.title'),
-              icon: 'tasks',
+              icon: 'book',
               children: null
             }, {
               link: 'i-i-s-itogovaya-tochno-контрагенты-l',
               caption: i18n.t('forms.application.sitemap.автоматизация-закупок.справочник.i-i-s-itogovaya-tochno-контрагенты-l.caption'),
               title: i18n.t('forms.application.sitemap.автоматизация-закупок.справочник.i-i-s-itogovaya-tochno-контрагенты-l.title'),
-              icon: 'table',
+              icon: 'tags',
               children: null
             }, {
               link: 'i-i-s-itogovaya-tochno-склады-l',
               caption: i18n.t('forms.application.sitemap.автоматизация-закупок.справочник.i-i-s-itogovaya-tochno-склады-l.caption'),
               title: i18n.t('forms.application.sitemap.автоматизация-закупок.справочник.i-i-s-itogovaya-tochno-склады-l.title'),
-              icon: 'folder open',
+              icon: 'edit',
               children: null
             }, {
               link: 'i-i-s-itogovaya-tochno-единицы-измер-l',
               caption: i18n.t('forms.application.sitemap.автоматизация-закупок.справочник.i-i-s-itogovaya-tochno-единицы-измер-l.caption'),
               title: i18n.t('forms.application.sitemap.автоматизация-закупок.справочник.i-i-s-itogovaya-tochno-единицы-измер-l.title'),
-              icon: 'chart bar',
+              icon: 'phone',
               children: null
             }, {
               link: 'i-i-s-itogovaya-tochno-менеджер-l',
               caption: i18n.t('forms.application.sitemap.автоматизация-закупок.справочник.i-i-s-itogovaya-tochno-менеджер-l.caption'),
               title: i18n.t('forms.application.sitemap.автоматизация-закупок.справочник.i-i-s-itogovaya-tochno-менеджер-l.title'),
-              icon: 'chart bar',
+              icon: 'tags',
               children: null
             }]
           }, {
@@ -67,13 +67,13 @@ export default Controller.extend({
               link: 'i-i-s-itogovaya-tochno-заказ-пост-l',
               caption: i18n.t('forms.application.sitemap.автоматизация-закупок.документы.i-i-s-itogovaya-tochno-заказ-пост-l.caption'),
               title: i18n.t('forms.application.sitemap.автоматизация-закупок.документы.i-i-s-itogovaya-tochno-заказ-пост-l.title'),
-              icon: 'address card',
+              icon: 'tasks',
               children: null
             }, {
               link: 'i-i-s-itogovaya-tochno-план-закупок-l',
               caption: i18n.t('forms.application.sitemap.автоматизация-закупок.документы.i-i-s-itogovaya-tochno-план-закупок-l.caption'),
               title: i18n.t('forms.application.sitemap.автоматизация-закупок.документы.i-i-s-itogovaya-tochno-план-закупок-l.title'),
-              icon: 'suitcase',
+              icon: 'table',
               children: null
             }]
           }, {
@@ -84,6 +84,7 @@ export default Controller.extend({
               link: 'i-i-s-itogovaya-tochno-отчет-о-зак-l',
               caption: i18n.t('forms.application.sitemap.автоматизация-закупок.отчеты.i-i-s-itogovaya-tochno-отчет-о-зак-l.caption'),
               title: i18n.t('forms.application.sitemap.автоматизация-закупок.отчеты.i-i-s-itogovaya-tochno-отчет-о-зак-l.title'),
+              icon: 'address card',
               children: null
             }]
           }]
