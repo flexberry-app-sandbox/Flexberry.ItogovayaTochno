@@ -95,16 +95,13 @@ export let defineProjections = function (modelClass) {
         номенклатура: attr('Номенклатура', { index: 1, hidden: true }),
         единицыИзмер: belongsTo('i-i-s-itogovaya-tochno-единицы-измер', '', {
           единицаИзмер: attr('Единица измерения', { index: 2 })
-        }, { index: -1, hidden: true }),
-        контрагенты: belongsTo('i-i-s-itogovaya-tochno-контрагенты', '', {
-          контрагент: attr('Контрагент', { index: 4 })
         }, { index: -1, hidden: true })
       }, { index: 0, displayMemberPath: 'номенклатура' }),
       количество: attr('Количество', { index: 3 }),
-      цена: attr('Цена', { index: 5 }),
-      суммаНДС: attr('Сумма НДС', { index: 6 }),
-      сумма: attr('Сумма', { index: 7 }),
-      этоУслуга: attr('Это услуга', { index: 8 })
+      цена: attr('Цена', { index: 4 }),
+      суммаНДС: attr('Сумма НДС', { index: 5 }),
+      сумма: attr('Сумма', { index: 6 }),
+      этоУслуга: attr('Это услуга', { index: 7 })
     })
   });
 

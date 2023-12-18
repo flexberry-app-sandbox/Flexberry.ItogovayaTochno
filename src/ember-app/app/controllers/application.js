@@ -32,19 +32,19 @@ export default Controller.extend({
               link: 'i-i-s-itogovaya-tochno-номенклатура-l',
               caption: i18n.t('forms.application.sitemap.автоматизация-закупок.справочник.i-i-s-itogovaya-tochno-номенклатура-l.caption'),
               title: i18n.t('forms.application.sitemap.автоматизация-закупок.справочник.i-i-s-itogovaya-tochno-номенклатура-l.title'),
-              icon: 'building',
+              icon: 'list',
               children: null
             }, {
               link: 'i-i-s-itogovaya-tochno-организации-l',
               caption: i18n.t('forms.application.sitemap.автоматизация-закупок.справочник.i-i-s-itogovaya-tochno-организации-l.caption'),
               title: i18n.t('forms.application.sitemap.автоматизация-закупок.справочник.i-i-s-itogovaya-tochno-организации-l.title'),
-              icon: 'file',
+              icon: 'paperclip',
               children: null
             }, {
               link: 'i-i-s-itogovaya-tochno-контрагенты-l',
               caption: i18n.t('forms.application.sitemap.автоматизация-закупок.справочник.i-i-s-itogovaya-tochno-контрагенты-l.caption'),
               title: i18n.t('forms.application.sitemap.автоматизация-закупок.справочник.i-i-s-itogovaya-tochno-контрагенты-l.title'),
-              icon: 'list',
+              icon: 'paperclip',
               children: null
             }, {
               link: 'i-i-s-itogovaya-tochno-склады-l',
@@ -56,12 +56,13 @@ export default Controller.extend({
               link: 'i-i-s-itogovaya-tochno-единицы-измер-l',
               caption: i18n.t('forms.application.sitemap.автоматизация-закупок.справочник.i-i-s-itogovaya-tochno-единицы-измер-l.caption'),
               title: i18n.t('forms.application.sitemap.автоматизация-закупок.справочник.i-i-s-itogovaya-tochno-единицы-измер-l.title'),
-              icon: 'calendar',
+              icon: 'tags',
               children: null
             }, {
               link: 'i-i-s-itogovaya-tochno-менеджер-l',
               caption: i18n.t('forms.application.sitemap.автоматизация-закупок.справочник.i-i-s-itogovaya-tochno-менеджер-l.caption'),
               title: i18n.t('forms.application.sitemap.автоматизация-закупок.справочник.i-i-s-itogovaya-tochno-менеджер-l.title'),
+              icon: 'folder',
               children: null
             }]
           }, {
@@ -72,7 +73,7 @@ export default Controller.extend({
               link: 'i-i-s-itogovaya-tochno-заказ-пост-l',
               caption: i18n.t('forms.application.sitemap.автоматизация-закупок.документы.i-i-s-itogovaya-tochno-заказ-пост-l.caption'),
               title: i18n.t('forms.application.sitemap.автоматизация-закупок.документы.i-i-s-itogovaya-tochno-заказ-пост-l.title'),
-              icon: 'building',
+              icon: 'chart bar',
               children: null
             }, {
               link: 'i-i-s-itogovaya-tochno-план-закупок-l',
@@ -89,7 +90,7 @@ export default Controller.extend({
               link: 'i-i-s-itogovaya-tochno-отчет-о-зак-l',
               caption: i18n.t('forms.application.sitemap.автоматизация-закупок.отчеты.i-i-s-itogovaya-tochno-отчет-о-зак-l.caption'),
               title: i18n.t('forms.application.sitemap.автоматизация-закупок.отчеты.i-i-s-itogovaya-tochno-отчет-о-зак-l.title'),
-              icon: 'folder open',
+              icon: 'file',
               children: null
             }]
           }]
