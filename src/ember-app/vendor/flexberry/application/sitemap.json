@@ -1,0 +1,102 @@
+﻿{
+  "applicationCaption": "Avtomatizaciya_zakupok_gotovaya",
+  "applicationTitle": "Avtomatizaciya_zakupok_gotovaya",
+  "items": [
+    {
+      "link": null,
+      "menuName": "автоматизация-закупок",
+      "caption": "Автоматизация закупок",
+      "title": "Автоматизация закупок",
+      "children": [
+        {
+          "link": null,
+          "menuName": "справочник",
+          "caption": "Справочник",
+          "title": "Справочник",
+          "children": [
+            {
+              "link": "i-i-s-itogovaya-tochno-номенклатура-l",
+              "menuName": null,
+              "caption": "Номенклатура",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-itogovaya-tochno-организации-l",
+              "menuName": null,
+              "caption": "Организации",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-itogovaya-tochno-контрагенты-l",
+              "menuName": null,
+              "caption": "Контрагенты",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-itogovaya-tochno-склады-l",
+              "menuName": null,
+              "caption": "Склады",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-itogovaya-tochno-единицы-измер-l",
+              "menuName": null,
+              "caption": "Единицы измерения",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-itogovaya-tochno-менеджер-l",
+              "menuName": null,
+              "caption": "Менеджер",
+              "title": "",
+              "children": null
+            }
+          ]
+        },
+        {
+          "link": null,
+          "menuName": "документы",
+          "caption": "Документы",
+          "title": "Документы",
+          "children": [
+            {
+              "link": "i-i-s-itogovaya-tochno-заказ-пост-l",
+              "menuName": null,
+              "caption": "Заказ поставщику",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-itogovaya-tochno-план-закупок-l",
+              "menuName": null,
+              "caption": "План закупок",
+              "title": "",
+              "children": null
+            }
+          ]
+        },
+        {
+          "link": null,
+          "menuName": "отчеты",
+          "caption": "Отчеты",
+          "title": "Отчеты",
+          "children": [
+            {
+              "link": "i-i-s-itogovaya-tochno-отчет-о-зак-l",
+              "menuName": null,
+              "caption": "Отчет о закупках",
+              "title": "",
+              "children": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

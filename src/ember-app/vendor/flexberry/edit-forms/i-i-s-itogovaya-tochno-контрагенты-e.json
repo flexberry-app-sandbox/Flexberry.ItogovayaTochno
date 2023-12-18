@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Контрагенты",
+  "name": "IISItogovaya_tochnoКонтрагентыE",
+  "className": "КонтрагентыE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-itogovaya-tochno-контрагенты",
+      "modelProjection": "КонтрагентыE"
+    }
+  ]
+}

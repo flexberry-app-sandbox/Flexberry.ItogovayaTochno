@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistencehttp://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="Olingo4PG">
+        <class>Itogovaya_tochno.model.OtchetOZak</class>
+        <class>Itogovaya_tochno.model.Menedzher</class>
+        <class>Itogovaya_tochno.model.EdinicyIzmer</class>
+        <class>Itogovaya_tochno.model.ZakazPost</class>
+        <class>Itogovaya_tochno.model.Kontragenty</class>
+        <class>Itogovaya_tochno.model.TCHZakaz</class>
+        <class>Itogovaya_tochno.model.Plan</class>
+        <class>Itogovaya_tochno.model.PlanZakupok</class>
+        <class>Itogovaya_tochno.model.Nomenklatura</class>
+        <class>Itogovaya_tochno.model.Sklady</class>
+        <class>Itogovaya_tochno.model.Organizacii</class>
+        <class>Itogovaya_tochno.model.FlexberryAdvLimit</class>
+        <class>Itogovaya_tochno.model.NewPlatformFlexberryFlexberryUserSetting</class>
+        <class>Itogovaya_tochno.model.NewPlatformFlexberryServicesLock</class>
+        <class>Itogovaya_tochno.model.IISCaseberryLoggingObjectsApplicationLog</class>
+
+    </persistence-unit>
+</persistence>

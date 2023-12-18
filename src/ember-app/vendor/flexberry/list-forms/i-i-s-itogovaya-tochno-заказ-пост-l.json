@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-itogovaya-tochno-заказ-пост-e",
+  "editForm": "i-i-s-itogovaya-tochno-заказ-пост-e",
+  "external": false,
+  "caption": "Заказ пост",
+  "name": "IISItogovaya_tochnoЗаказПостL",
+  "className": "ЗаказПостL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-itogovaya-tochno-заказ-пост",
+      "modelProjection": "ЗаказПостL"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-itogovaya-tochno-контрагенты-e",
+  "editForm": "i-i-s-itogovaya-tochno-контрагенты-e",
+  "external": false,
+  "caption": "Контрагенты",
+  "name": "IISItogovaya_tochnoКонтрагентыL",
+  "className": "КонтрагентыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-itogovaya-tochno-контрагенты",
+      "modelProjection": "КонтрагентыL"
+    }
+  ]
+}

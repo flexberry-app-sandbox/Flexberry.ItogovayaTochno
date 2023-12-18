@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-itogovaya-tochno-номенклатура-e",
+  "editForm": "i-i-s-itogovaya-tochno-номенклатура-e",
+  "external": false,
+  "caption": "Номенклатура",
+  "name": "IISItogovaya_tochnoНоменклатураL",
+  "className": "НоменклатураL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-itogovaya-tochno-номенклатура",
+      "modelProjection": "НоменклатураL"
+    }
+  ]
+}

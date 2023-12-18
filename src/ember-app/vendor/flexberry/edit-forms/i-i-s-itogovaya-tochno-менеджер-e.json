@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "",
+  "name": "IISItogovaya_tochnoМенеджерE",
+  "className": "МенеджерE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-itogovaya-tochno-менеджер",
+      "modelProjection": "МенеджерE"
+    }
+  ]
+}
